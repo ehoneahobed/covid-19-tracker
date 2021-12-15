@@ -1,0 +1,29 @@
+.table{
+    margin-top: 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 400px;
+    color: #6a5d6d;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.table tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table td {
+    padding: 0.5rem;
+}
+
+.table tr:nth-of-type(odd){
+    background-color: #f3f2f8;
+}
